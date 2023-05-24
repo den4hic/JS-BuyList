@@ -163,6 +163,7 @@ body{
 }
 
 .bought:hover, .not-bought:hover{
+	cursor: pointer;
 	background: linear-gradient(#eeeeee, #f7f7f7);
 }
 

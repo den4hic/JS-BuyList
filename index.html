@@ -1,16 +1,85 @@
 <!DOCTYPE html>
-<html>
-<head lang="uk">
-    <meta charset="UTF-8">
-    <title>My Page</title>
-
-
-    <link rel="stylesheet" type="text/css" href="main.css" />
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<title>My Page</title>
+	<link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
-	<span class="product-item">
-		Apple
-		<span class="amount">4</span>
-	</span>
+<div class="parent">
+	<div class="product">
+		<div class="input">
+			<label for="input"></label><input placeholder="Назва товару" id="input" type="text">
+			<button class="volumetric-button" type="submit"><strong>Додати</strong></button>
+		</div>
+		<div class="product-first">
+			<div class="left"><s>Помідори</s></div>
+
+			<div class="center">
+				<span class="product-count">1</span>
+			</div>
+			<div class="right">
+				<button class="not-bought">Не куплено</button>
+			</div>
+		</div>
+		<div class="product-second">
+			<div class="left"><span>Печиво</span></div>
+
+			<div class="center">
+				<button class="subtract" type="button">-</button>
+				<span class="product-count">1</span>
+				<button class="add" type="button">+</button>
+			</div>
+			<div class="right">
+				<button class="bought">Куплено</button>
+				<button class="delete">x</button>
+			</div>
+		</div>
+		<div class="product-third">
+			<div class="left"><span>Сир</span></div>
+
+			<div class="center">
+				<button class="subtract" type="button">-</button>
+				<span class="product-count">2</span>
+				<button class="add" type="button">+</button>
+			</div>
+			<div class="right">
+				<button class="bought">Куплено</button>
+				<button class="delete">x</button>
+			</div>
+		</div>
+	</div>
+	<div class="basket">
+		<div class="basket-first">
+			<h2>Залишилося</h2>
+		</div>
+		<div class="basket-second">
+					<span class="product-item">
+						Печиво
+						<span class="amount">2</span>
+					</span>
+
+			<span class="product-item">
+						Сир
+						<span class="amount">1</span>
+					</span>
+		</div>
+		<div class="basket-third">
+			<h2>Куплено</h2>
+		</div>
+		<div class="basket-fourth">
+			<s class="product-item">
+				Печиво
+				<s class="amount">2</s>
+			</s>
+		</div>
+	</div>
+</div>
+<footer class="badge">
+	<div>
+		<h2 class="badge"><strong>Buy List</strong></h2>
+		<p>Created by: <br> <span class="author"><strong>Denys Davydov</strong></span></p>
+	</div>
+</footer>
 </body>
 </html>

@@ -160,11 +160,13 @@ body{
 	width: 100px;
 	height: 35px;
 	border-radius: 5px;
-	font-size: 13px;
-	padding: 10px;
+
 	background: linear-gradient(#f7f7f7, #eeeeee);
 }
-
+.button-text {
+	font-size: 13px;
+	margin-top: 7px;
+}
 .bought {
 	margin-right: 5px;
 }

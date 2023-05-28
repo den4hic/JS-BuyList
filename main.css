@@ -2,11 +2,14 @@
 	background-color: #e8e8e8;
 	display: inline-block;
 	height: 22px;
-	padding: 10px;
+
+	padding: 11px 10px 8px 10px;
+	border-top: 10px;
 	border-radius: 5px;
 	font-family: "Trebuchet MS", Verdana, sans-serif;
 	font-size: 14px;
 }
+
 h2{
 	font-family: "Trebuchet MS", Verdana, sans-serif;
 	margin: 0;
@@ -19,7 +22,6 @@ h2{
 	color: white;
 	font-size: 12px;
 	border-radius: 10px;
-
 	display: inline-block;
 	height: 20px;
 	width: 20px;
@@ -261,5 +263,34 @@ div.left s, span{
 	footer {
 		background-color: white;
 		color: black;
+		border: thin solid  purple;
 	}
+	.author {
+		font-size: 10px;
+	}
+}
+
+[data-tooltip] {
+	position: relative;
+	cursor: pointer;
+}
+
+[data-tooltip]::before {
+	content: attr(data-tooltip);
+	position: absolute;
+	background-color: #af01da;
+	font-size: 13px;
+	color: white;
+	border-radius: 5px;
+	padding: 5px;
+	top: -30px;
+	left: 50%;
+	transform: translateX(-50%);
+	white-space: nowrap;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+[data-tooltip]:hover::before {
+	opacity: 1;
 }

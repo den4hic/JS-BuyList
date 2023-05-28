@@ -144,7 +144,6 @@ body{
 
 .add:hover {
 	background: linear-gradient(#1a9737, #22ba46);
-	/*box-shadow: 0 3px 0 #0e601d;*/
 }
 
 .delete {
@@ -152,7 +151,6 @@ body{
 	width: 35px;
 	height: 35px;
 	font-size: 15px;
-	padding: 10px;
 }
 
 .bought, .not-bought {
